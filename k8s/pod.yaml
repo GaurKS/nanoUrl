@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nano-url
+spec:
+  containers:
+    - name: nano-url
+      image: krugarr/urlshortnerapp:latest
+      ports:
+        - containerPort: 5000
